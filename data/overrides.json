@@ -1,0 +1,9 @@
+{
+  "70000001048854769": {
+    "_source": "Фото — раздел «Снаружи» / «Внутри» карточки 2ГИС (снимки посетителей, по разрешению пользователя)",
+    "hero": "/assets/the-bull/hero.jpg",
+    "photos": ["/assets/the-bull/1.jpg", "/assets/the-bull/2.jpg", "/assets/the-bull/3.jpg", "/assets/the-bull/4.jpg"],
+    "theme": "noir",
+    "accent": "#3ddc97"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "bishkek-clothes-demos",
+  "version": "1.0.0",
+  "description": "Демо-сайты магазинов одежды с админкой",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test-api.js"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "pg": "8.23.1"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "private": true
+}

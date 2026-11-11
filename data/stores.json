@@ -1,0 +1,1278 @@
+[
+ {
+  "slug": "the-bull",
+  "id": "70000001048854769",
+  "name": "The bull",
+  "niche": "магазин одежды и обуви",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001048854769",
+  "phone": "+996 503 50-13-01",
+  "whatsapp": "996503501301",
+  "instagram": "https://instagram.com/thebull.kg",
+  "address": "улица Насирдина Исанова, 117",
+  "address_comment": "1 этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.879045,
+   "lon": 74.592381
+  },
+  "hours": {
+   "mon": "11:00-21:00",
+   "tue": "11:00-21:00",
+   "wed": "11:00-21:00",
+   "thu": "11:00-21:00",
+   "fri": "11:00-21:00",
+   "sat": "11:00-21:00",
+   "sun": "11:00-21:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 319,
+  "rubrics": [
+   "Мужская одежда",
+   "Женская одежда",
+   "Обувные магазины",
+   "Верхняя одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [
+   "/assets/the-bull/1.jpg",
+   "/assets/the-bull/2.jpg",
+   "/assets/the-bull/3.jpg",
+   "/assets/the-bull/4.jpg"
+  ],
+  "hero": "/assets/the-bull/hero.jpg",
+  "theme": "noir",
+  "accent": "#3ddc97",
+  "_source": "Фото — раздел «Снаружи» / «Внутри» карточки 2ГИС (снимки посетителей, по разрешению пользователя)"
+ },
+ {
+  "slug": "modo",
+  "id": "70000001053418028",
+  "name": "Modo",
+  "niche": "магазин спортивной и фитнес-одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001053418028",
+  "phone": "+996 703 77-07-71",
+  "whatsapp": "996550315317",
+  "instagram": "https://instagram.com/modo.kg",
+  "address": "улица Анкара, 377",
+  "address_comment": "2 этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.857485,
+   "lon": 74.600098
+  },
+  "hours": {
+   "mon": "11:00-20:30",
+   "tue": "11:00-20:30",
+   "wed": "11:00-20:30",
+   "thu": "11:00-20:30",
+   "fri": "11:00-20:30",
+   "sat": "11:00-19:30",
+   "sun": "11:00-19:30"
+  },
+  "rating": 4.8,
+  "reviews_count": 192,
+  "rubrics": [
+   "Спортивная одежда и обувь",
+   "Женская одежда",
+   "Мужская одежда"
+  ],
+  "attrs": [
+   "Термобельё",
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "rose",
+  "accent": null
+ },
+ {
+  "slug": "ques-lavka",
+  "id": "70000001074773693",
+  "name": "Ques.lavka",
+  "niche": "концептуальный магазин",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001074773693",
+  "phone": "+996 504 00-30-33",
+  "whatsapp": "996504003033",
+  "instagram": "https://instagram.com/ques.lavka",
+  "address": "проспект Чуй, 328",
+  "address_comment": "цокольный этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.875881,
+   "lon": 74.597324
+  },
+  "hours": {
+   "mon": "10:00-20:00",
+   "tue": "10:00-20:00",
+   "wed": "10:00-20:00",
+   "thu": "10:00-20:00",
+   "fri": "10:00-20:00",
+   "sat": "10:00-20:00",
+   "sun": "10:00-20:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 165,
+  "rubrics": [
+   "Бижутерия",
+   "Сумки и кожгалантерея",
+   "Женская одежда",
+   "Упаковочные материалы"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "ocean",
+  "accent": null
+ },
+ {
+  "slug": "fabishop",
+  "id": "70000001020072457",
+  "name": "Fabishop",
+  "niche": "магазин одежды и обуви",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001020072457",
+  "phone": "+996 505 88-88-28",
+  "whatsapp": "996505888828",
+  "instagram": "https://instagram.com/modex.stores",
+  "address": "Киевская улица, 95а",
+  "address_comment": "1 этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.875047,
+   "lon": 74.597171
+  },
+  "hours": {
+   "mon": "10:00-21:00",
+   "tue": "10:00-21:00",
+   "wed": "10:00-21:00",
+   "thu": "10:00-21:00",
+   "fri": "10:00-21:00",
+   "sat": "10:00-21:00",
+   "sun": "10:00-21:00"
+  },
+  "rating": 5,
+  "reviews_count": 157,
+  "rubrics": [
+   "Обувные магазины",
+   "Сумки и кожгалантерея",
+   "Мужская одежда",
+   "Спортивная одежда и обувь"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "noir",
+  "accent": null
+ },
+ {
+  "slug": "kadam",
+  "id": "70000001083925519",
+  "name": "Кадам",
+  "niche": "магазин",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001083925519",
+  "phone": "+996 508 60-69-99",
+  "whatsapp": "996508606999",
+  "instagram": "https://instagram.com/kadam__kg",
+  "address": "проспект Чуй, 316",
+  "address_comment": "1 этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.874898,
+   "lon": 74.601832
+  },
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "rating": 4.8,
+  "reviews_count": 146,
+  "rubrics": [
+   "Мужская одежда",
+   "Обувные магазины",
+   "Сумки и кожгалантерея",
+   "Спортивная одежда и обувь",
+   "Джинсовая одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "rose",
+  "accent": null
+ },
+ {
+  "slug": "krossbox",
+  "id": "70000001084284381",
+  "name": "Krossbox",
+  "niche": "магазин кроссовок",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001084284381",
+  "phone": "+996 557 00-04-44",
+  "whatsapp": "996557000444",
+  "instagram": "https://instagram.com/krossboxstore",
+  "address": "улица Ибраимова, 115",
+  "address_comment": "1 этаж",
+  "district": "Свердловский район",
+  "coords": {
+   "lat": 42.874255,
+   "lon": 74.619912
+  },
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 144,
+  "rubrics": [
+   "Спортивная одежда и обувь",
+   "Обувные магазины"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "ocean",
+  "accent": null
+ },
+ {
+  "slug": "arzan-baza",
+  "id": "70000001099952045",
+  "name": "Арзан база",
+  "niche": "магазин мужской одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001099952045",
+  "phone": "+996 504 44-64-45",
+  "whatsapp": "996504446445",
+  "instagram": "https://instagram.com/arzan_bazakg",
+  "address": "проспект Чуй, 217",
+  "address_comment": "3 этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.876495,
+   "lon": 74.595217
+  },
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "rating": 4.8,
+  "reviews_count": 133,
+  "rubrics": [
+   "Мужская одежда",
+   "Обувные магазины"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "noir",
+  "accent": null
+ },
+ {
+  "slug": "azraud-store",
+  "id": "70000001083863008",
+  "name": "Azraud Store",
+  "niche": "магазин",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001083863008",
+  "phone": "+996 773 02-53-76",
+  "whatsapp": "996773025376",
+  "instagram": "https://instagram.com/azraud.store",
+  "address": "Киевская улица, 137",
+  "address_comment": "1 этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.875394,
+   "lon": 74.589347
+  },
+  "hours": {
+   "mon": "11:00-21:00",
+   "tue": "11:00-21:00",
+   "wed": "11:00-21:00",
+   "thu": "11:00-21:00",
+   "fri": "11:00-21:00",
+   "sat": "11:00-21:00",
+   "sun": "11:00-21:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 127,
+  "rubrics": [
+   "Мужская одежда",
+   "Женская одежда",
+   "Обувные магазины"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница",
+   "Русский",
+   "Кыргызский",
+   "Пандус",
+   "Широкий лифт",
+   "Автоматическая дверь"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "rose",
+  "accent": null
+ },
+ {
+  "slug": "oversize",
+  "id": "70000001090795784",
+  "name": "Oversize",
+  "niche": "магазин одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001090795784",
+  "phone": "+996 705 40-80-45",
+  "whatsapp": "996705408045",
+  "instagram": "https://instagram.com/oversize.kg",
+  "address": "улица Жусупа Абдрахманова, 307",
+  "address_comment": "1 этаж",
+  "district": "Октябрьский район",
+  "coords": {
+   "lat": 42.85057,
+   "lon": 74.609975
+  },
+  "hours": {
+   "mon": "10:00-21:00",
+   "tue": "10:00-21:00",
+   "wed": "10:00-21:00",
+   "thu": "10:00-21:00",
+   "fri": "10:00-21:00",
+   "sat": "10:00-21:00",
+   "sun": "10:00-21:00"
+  },
+  "rating": 4.8,
+  "reviews_count": 114,
+  "rubrics": [
+   "Мужская одежда",
+   "Женская одежда",
+   "Обувные магазины",
+   "Спортивная одежда и обувь",
+   "Головные и шейные уборы"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "ocean",
+  "accent": null
+ },
+ {
+  "slug": "rodnyy",
+  "id": "70000001101914548",
+  "name": "Родный",
+  "niche": "магазин мужской одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001101914548",
+  "phone": "+996 702 69-96-69",
+  "whatsapp": "996996702699",
+  "instagram": "https://instagram.com/prioritet_kg",
+  "address": "проспект Чуй, 322",
+  "address_comment": "1 этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.875823,
+   "lon": 74.599891
+  },
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 113,
+  "rubrics": [
+   "Мужская одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "noir",
+  "accent": null
+ },
+ {
+  "slug": "emka",
+  "id": "70000001028422259",
+  "name": "Эмка",
+  "niche": "магазин детской одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001028422259",
+  "phone": "+996 777 22-48-64",
+  "whatsapp": "996777224864",
+  "instagram": "https://instagram.com/emka_magazin",
+  "address": "улица Исы Ахунбаева, 186/1",
+  "address_comment": "1 этаж",
+  "district": "Ленинский район",
+  "coords": {
+   "lat": 42.843323,
+   "lon": 74.576134
+  },
+  "hours": {
+   "mon": "09:00-21:00",
+   "tue": "09:00-21:00",
+   "wed": "09:00-21:00",
+   "thu": "09:00-21:00",
+   "fri": "09:00-21:00",
+   "sat": "09:00-21:00",
+   "sun": "09:00-21:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 99,
+  "rubrics": [
+   "Детская одежда",
+   "Детское питание",
+   "Товары для новорождённых"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница",
+   "Опт"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "rose",
+  "accent": null
+ },
+ {
+  "slug": "breaking-store",
+  "id": "70000001087770941",
+  "name": "Breaking Store",
+  "niche": "магазин одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001087770941",
+  "phone": "+996 559 00-99-36",
+  "whatsapp": "996559009936",
+  "instagram": "https://instagram.com/breaking.store",
+  "address": "Безымянная улица, 37/2",
+  "address_comment": "5 этаж, 506 бутик",
+  "district": "Октябрьский район",
+  "coords": {
+   "lat": 42.834477,
+   "lon": 74.619673
+  },
+  "hours": {
+   "mon": "10:30-20:30",
+   "tue": "10:30-20:30",
+   "wed": "10:30-20:30",
+   "thu": "10:30-20:30",
+   "fri": "10:30-20:30",
+   "sat": "10:30-20:30",
+   "sun": "10:30-20:30"
+  },
+  "rating": 4.7,
+  "reviews_count": 74,
+  "rubrics": [
+   "Мужская одежда",
+   "Женская одежда",
+   "Часы"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "ocean",
+  "accent": null
+ },
+ {
+  "slug": "mano",
+  "id": "70000001118086997",
+  "name": "Mano",
+  "niche": "магазин мужской одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001118086997",
+  "phone": "+996 550 70-21-08",
+  "whatsapp": "996550702108",
+  "instagram": "https://instagram.com/mano_bishkek",
+  "address": "улица Гоголя, 191",
+  "address_comment": null,
+  "district": "Свердловский район",
+  "coords": {
+   "lat": 42.883652,
+   "lon": 74.619236
+  },
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "rating": 5,
+  "reviews_count": 74,
+  "rubrics": [
+   "Мужская одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "noir",
+  "accent": null
+ },
+ {
+  "slug": "sowe-bloc",
+  "id": "70000001075164120",
+  "name": "Sowe_bloc",
+  "niche": "магазин одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001075164120",
+  "phone": "+996 999 14-08-40",
+  "whatsapp": "996502269777",
+  "instagram": "https://instagram.com/sowebloc",
+  "address": "улица Юнусалиева, 117",
+  "address_comment": null,
+  "district": "Октябрьский район",
+  "coords": {
+   "lat": 42.845583,
+   "lon": 74.622648
+  },
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 73,
+  "rubrics": [
+   "Мужская одежда",
+   "Женская одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница",
+   "Пандус"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "rose",
+  "accent": null
+ },
+ {
+  "slug": "uletnye-ceny",
+  "id": "70000001114529157",
+  "name": "Улетные цены",
+  "niche": "магазин одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001114529157",
+  "phone": "+996 550 01-82-88",
+  "whatsapp": null,
+  "instagram": "https://instagram.com/uletnye__ceny",
+  "address": "проспект Жибек-Жолу, 675-673",
+  "address_comment": null,
+  "district": "Свердловский район",
+  "coords": {
+   "lat": 42.888179,
+   "lon": 74.634384
+  },
+  "hours": {
+   "mon": "09:00-20:00",
+   "tue": "09:00-20:00",
+   "wed": "09:00-20:00",
+   "thu": "09:00-20:00",
+   "fri": "09:00-20:00",
+   "sat": "09:00-20:00",
+   "sun": "09:00-20:00"
+  },
+  "rating": 4.6,
+  "reviews_count": 67,
+  "rubrics": [
+   "Мужская одежда",
+   "Женская одежда",
+   "Детская одежда"
+  ],
+  "attrs": [
+   "Розница",
+   "Опт"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "ocean",
+  "accent": null
+ },
+ {
+  "slug": "nuri",
+  "id": "70000001103202623",
+  "name": "Нури",
+  "niche": "магазин женской одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001103202623",
+  "phone": "+996 509 31-09-01",
+  "whatsapp": "996509310901",
+  "instagram": "https://instagram.com/nuriishoop__",
+  "address": "микрорайон Джал-23, 7/4",
+  "address_comment": null,
+  "district": "Ленинский район",
+  "coords": {
+   "lat": 42.836908,
+   "lon": 74.566699
+  },
+  "hours": {
+   "mon": "11:00-23:00",
+   "tue": "11:00-23:00",
+   "wed": "11:00-23:00",
+   "thu": "11:00-23:00",
+   "fri": "11:00-23:00",
+   "sat": "11:00-23:00",
+   "sun": "11:00-23:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 66,
+  "rubrics": [
+   "Женская одежда",
+   "Обувные магазины"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "noir",
+  "accent": null
+ },
+ {
+  "slug": "gantelka-sportswear",
+  "id": "70000001037111081",
+  "name": "Gantelka sportswear",
+  "niche": "магазин женской спортивной одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001037111081",
+  "phone": "+996 705 20-51-05",
+  "whatsapp": "996705205105",
+  "instagram": "https://instagram.com/gantelka_sportswear",
+  "address": "улица Абдумомунова, 282",
+  "address_comment": "9 этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.880138,
+   "lon": 74.590984
+  },
+  "hours": {
+   "mon": "10:00-20:00",
+   "tue": "10:00-20:00",
+   "wed": "10:00-20:00",
+   "thu": "10:00-20:00",
+   "fri": "10:00-20:00",
+   "sat": "10:00-20:00",
+   "sun": "10:00-20:00"
+  },
+  "rating": 4.8,
+  "reviews_count": 61,
+  "rubrics": [
+   "Спортивная одежда и обувь",
+   "Женская одежда",
+   "Одежда и обувь для танцев"
+  ],
+  "attrs": [
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "rose",
+  "accent": null
+ },
+ {
+  "slug": "nt-showroom",
+  "id": "70000001102710975",
+  "name": "Nt showroom",
+  "niche": "магазин женской одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001102710975",
+  "phone": "+996 700 52-52-20",
+  "whatsapp": "996700525220",
+  "instagram": "https://instagram.com/ntshowroom",
+  "address": "улица Кулатова, 14/1",
+  "address_comment": "1 этаж",
+  "district": "Октябрьский район",
+  "coords": {
+   "lat": 42.858865,
+   "lon": 74.613214
+  },
+  "hours": {
+   "mon": "10:00-20:00",
+   "tue": "10:00-20:00",
+   "wed": "10:00-20:00",
+   "thu": "10:00-20:00",
+   "fri": "10:00-20:00",
+   "sat": "10:00-20:00",
+   "sun": "10:00-20:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 57,
+  "rubrics": [
+   "Мусульманская одежда",
+   "Религиозные товары",
+   "Женская одежда",
+   "Косметика и парфюмерия"
+  ],
+  "attrs": [
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "ocean",
+  "accent": null
+ },
+ {
+  "slug": "bir-qyzyq-jer",
+  "id": "70000001075183943",
+  "name": "Bir Qyzyq Jer",
+  "niche": "шоурум",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001075183943",
+  "phone": "+996 501 29-67-58",
+  "whatsapp": "996501296758",
+  "instagram": "https://instagram.com/birqyzyq_jer",
+  "address": "улица Жусупа Абдрахманова, 465/2",
+  "address_comment": null,
+  "district": "Свердловский район",
+  "coords": {
+   "lat": 42.873133,
+   "lon": 74.612128
+  },
+  "hours": {
+   "mon": "12:00-20:00",
+   "tue": "12:00-20:00",
+   "wed": "12:00-20:00",
+   "thu": "12:00-20:00",
+   "fri": "12:00-20:00",
+   "sat": "12:00-20:00",
+   "sun": "12:00-20:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 53,
+  "rubrics": [
+   "Женская одежда",
+   "Бижутерия",
+   "Книги",
+   "Сувениры",
+   "Канцтовары"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "noir",
+  "accent": null
+ },
+ {
+  "slug": "mono-dress",
+  "id": "70000001093354091",
+  "name": "mono Dress",
+  "niche": "магазин одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001093354091",
+  "phone": "+996 707 02-18-08",
+  "whatsapp": "996707021808",
+  "instagram": "https://instagram.com/mono.dress.kg",
+  "address": "улица Жусупа Абдрахманова, 240",
+  "address_comment": "2 этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.855505,
+   "lon": 74.609865
+  },
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 53,
+  "rubrics": [
+   "Женская одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "rose",
+  "accent": null
+ },
+ {
+  "slug": "liliya",
+  "id": "70000001027183459",
+  "name": "Лилия",
+  "niche": "магазин одежды больших размеров",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001027183459",
+  "phone": "+996 700 18-90-89",
+  "whatsapp": "996700189089",
+  "instagram": "https://instagram.com/odejda_liliya",
+  "address": "проспект Чуй, 336",
+  "address_comment": "цокольный этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.87587,
+   "lon": 74.594224
+  },
+  "hours": {
+   "mon": "09:00-19:00",
+   "tue": "09:00-19:00",
+   "wed": "09:00-19:00",
+   "thu": "09:00-19:00",
+   "fri": "09:00-19:00",
+   "sat": "09:00-19:00",
+   "sun": "09:00-19:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 50,
+  "rubrics": [
+   "Женская одежда",
+   "Детская одежда",
+   "Мужская одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "ocean",
+  "accent": null
+ },
+ {
+  "slug": "baysarkech",
+  "id": "70000001113629416",
+  "name": "Байсаркеч",
+  "niche": "женская одежда",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001113629416",
+  "phone": "+996 501 09-71-55",
+  "whatsapp": "996501097155",
+  "instagram": "https://instagram.com/baisarkech",
+  "address": "12-й микрорайон, 9а",
+  "address_comment": null,
+  "district": "Октябрьский район",
+  "coords": {
+   "lat": 42.81552,
+   "lon": 74.633607
+  },
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "rating": 5,
+  "reviews_count": 43,
+  "rubrics": [
+   "Женская одежда",
+   "Мужская одежда",
+   "Обувные магазины",
+   "Сумки и кожгалантерея",
+   "Головные и шейные уборы"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "noir",
+  "accent": null
+ },
+ {
+  "slug": "sportland",
+  "id": "70000001110620592",
+  "name": "Sportland",
+  "niche": "магазин детской одежды и обуви",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001110620592",
+  "phone": "+996 500 11-14-14",
+  "whatsapp": "996500111414",
+  "instagram": "https://instagram.com/sportland.kgz",
+  "address": "улица Жусупа Абдрахманова, 307",
+  "address_comment": "1 этаж, 9 офис",
+  "district": "Октябрьский район",
+  "coords": {
+   "lat": 42.850822,
+   "lon": 74.610513
+  },
+  "hours": {
+   "mon": "12:00-21:00",
+   "tue": "12:00-21:00",
+   "wed": "12:00-21:00",
+   "thu": "12:00-21:00",
+   "fri": "12:00-21:00",
+   "sat": "12:00-21:00",
+   "sun": "12:00-21:00"
+  },
+  "rating": 4.8,
+  "reviews_count": 42,
+  "rubrics": [
+   "Детская одежда",
+   "Детская обувь"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "rose",
+  "accent": null
+ },
+ {
+  "slug": "papa-tozhe-znaet",
+  "id": "70000001103456028",
+  "name": "Папа тоже знает",
+  "niche": "детский магазин",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001103456028",
+  "phone": "+996 702 77-33-44",
+  "whatsapp": "996702773344",
+  "instagram": "https://instagram.com/papatozheznaet",
+  "address": "улица Тоголок Молдо, 93",
+  "address_comment": "1 этаж",
+  "district": "Свердловский район",
+  "coords": {
+   "lat": 42.892003,
+   "lon": 74.597858
+  },
+  "hours": {
+   "mon": "09:30-21:30",
+   "tue": "09:30-21:30",
+   "wed": "09:30-21:30",
+   "thu": "09:30-21:30",
+   "fri": "09:30-21:30",
+   "sat": "09:30-21:30",
+   "sun": "09:30-21:30"
+  },
+  "rating": 4.9,
+  "reviews_count": 35,
+  "rubrics": [
+   "Детское питание",
+   "Игрушки",
+   "Детская одежда",
+   "Товары для новорождённых"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "ocean",
+  "accent": null
+ },
+ {
+  "slug": "gnomik",
+  "id": "70000001032783612",
+  "name": "Гномик",
+  "niche": "магазин детской одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001032783612",
+  "phone": "+996 703 68-31-78",
+  "whatsapp": null,
+  "instagram": "https://instagram.com/gnomik_kg",
+  "address": "проспект Чуй, 115а",
+  "address_comment": "1 этаж",
+  "district": "Свердловский район",
+  "coords": {
+   "lat": 42.875411,
+   "lon": 74.630458
+  },
+  "hours": {
+   "mon": "10:00-20:00",
+   "tue": "10:00-20:00",
+   "wed": "10:00-20:00",
+   "thu": "10:00-20:00",
+   "fri": "10:00-20:00",
+   "sat": "10:00-20:00",
+   "sun": "10:00-20:00"
+  },
+  "rating": 4.8,
+  "reviews_count": 34,
+  "rubrics": [
+   "Детская одежда",
+   "Товары для новорождённых"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "noir",
+  "accent": null
+ },
+ {
+  "slug": "bless",
+  "id": "70000001094134512",
+  "name": "Блесс",
+  "niche": "магазин одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001094134512",
+  "phone": "+996 554 71-06-66",
+  "whatsapp": "996554710666",
+  "instagram": "https://instagram.com/blessbishkek",
+  "address": "улица Курманжан датка, 385",
+  "address_comment": null,
+  "district": "Октябрьский район",
+  "coords": {
+   "lat": 42.840562,
+   "lon": 74.637112
+  },
+  "hours": {
+   "mon": "10:00-20:40",
+   "tue": "10:00-20:40",
+   "wed": "10:00-20:40",
+   "thu": "10:00-20:40",
+   "fri": "10:00-20:40",
+   "sat": "10:00-20:40",
+   "sun": "10:00-20:40"
+  },
+  "rating": 4.8,
+  "reviews_count": 30,
+  "rubrics": [
+   "Женская одежда",
+   "Мужская одежда",
+   "Детская одежда",
+   "Обувные магазины",
+   "Детская обувь"
+  ],
+  "attrs": [
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "rose",
+  "accent": null
+ },
+ {
+  "slug": "unreallstore",
+  "id": "70000001101329906",
+  "name": "Unreallstore",
+  "niche": "магазин премиальной мужской одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001101329906",
+  "phone": "+996 704 00-57-88",
+  "whatsapp": null,
+  "instagram": "https://instagram.com/unreallstore",
+  "address": "улица Жусупа Абдрахманова, 226",
+  "address_comment": "1 этаж",
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.854631,
+   "lon": 74.609828
+  },
+  "hours": {
+   "mon": "11:00-21:00",
+   "tue": "11:00-21:00",
+   "wed": "11:00-21:00",
+   "thu": "11:00-21:00",
+   "fri": "11:00-21:00",
+   "sat": "11:00-21:00",
+   "sun": "11:00-21:00"
+  },
+  "rating": 5,
+  "reviews_count": 25,
+  "rubrics": [
+   "Мужская одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "ocean",
+  "accent": null
+ },
+ {
+  "slug": "mont",
+  "id": "70000001066886331",
+  "name": "Mont",
+  "niche": "магазин мужской одежды",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001066886331",
+  "phone": "+996 558 33-33-39",
+  "whatsapp": "996558333339",
+  "instagram": "https://instagram.com/mont_kyrgyzstan_",
+  "address": "проспект Чынгыза Айтматова, 389",
+  "address_comment": "1 этаж",
+  "district": "Ленинский район",
+  "coords": {
+   "lat": 42.867948,
+   "lon": 74.587135
+  },
+  "hours": {
+   "mon": "10:00-22:00",
+   "tue": "10:00-22:00",
+   "wed": "10:00-22:00",
+   "thu": "10:00-22:00",
+   "fri": "10:00-22:00",
+   "sat": "10:00-22:00",
+   "sun": "10:00-22:00"
+  },
+  "rating": 4.8,
+  "reviews_count": 23,
+  "rubrics": [
+   "Мужская одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "noir",
+  "accent": null
+ },
+ {
+  "slug": "weror-kg",
+  "id": "70000001083801426",
+  "name": "Weror kg",
+  "niche": "главный филиал",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001083801426",
+  "phone": "+996 500 48-88-01",
+  "whatsapp": "996500488801",
+  "instagram": "https://instagram.com/weror_kg",
+  "address": "улица Иманалы Айдарбекова, 33",
+  "address_comment": "1 этаж",
+  "district": "Ленинский район",
+  "coords": {
+   "lat": 42.875627,
+   "lon": 74.576132
+  },
+  "hours": {
+   "mon": "10:00-21:00",
+   "tue": "10:00-21:00",
+   "wed": "10:00-21:00",
+   "thu": "10:00-21:00",
+   "fri": "10:00-21:00",
+   "sat": "10:00-21:00",
+   "sun": "10:00-21:00"
+  },
+  "rating": 4.8,
+  "reviews_count": 21,
+  "rubrics": [
+   "Мужская одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "rose",
+  "accent": null
+ },
+ {
+  "slug": "mykid",
+  "id": "70000001088772185",
+  "name": "MyKid",
+  "niche": "магазин детских товаров",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001088772185",
+  "phone": "+996 509 11-15-00",
+  "whatsapp": "996509111500",
+  "instagram": "https://instagram.com/mykid_kg",
+  "address": "проспект Аалы Токомбаева, 21/3",
+  "address_comment": "1 этаж",
+  "district": "Октябрьский район",
+  "coords": {
+   "lat": 42.818681,
+   "lon": 74.617783
+  },
+  "hours": {
+   "mon": "10:00-20:00",
+   "tue": "10:00-20:00",
+   "wed": "10:00-20:00",
+   "thu": "10:00-20:00",
+   "fri": "10:00-20:00",
+   "sat": "10:00-20:00",
+   "sun": "10:00-20:00"
+  },
+  "rating": 4.8,
+  "reviews_count": 17,
+  "rubrics": [
+   "Детская одежда",
+   "Детская обувь"
+  ],
+  "attrs": [
+   "Доставка",
+   "Пандус"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "ocean",
+  "accent": null
+ },
+ {
+  "slug": "afilin-store",
+  "id": "70000001088460465",
+  "name": "Магазин одежды",
+  "niche": "мужская одежда",
+  "source_url": "https://2gis.kg/bishkek/firm/70000001088460465",
+  "phone": "+996 500 23-47-61",
+  "whatsapp": "996500234761",
+  "instagram": "https://instagram.com/afilin_store",
+  "address": "улица Джаманбаева, 31а",
+  "address_comment": null,
+  "district": "Первомайский район",
+  "coords": {
+   "lat": 42.849959,
+   "lon": 74.588701
+  },
+  "hours": {
+   "mon": "11:00-20:00",
+   "tue": "11:00-20:00",
+   "wed": "11:00-20:00",
+   "thu": "11:00-20:00",
+   "fri": "11:00-20:00",
+   "sat": "11:00-20:00",
+   "sun": "11:00-20:00"
+  },
+  "rating": 4.9,
+  "reviews_count": 15,
+  "rubrics": [
+   "Мужская одежда"
+  ],
+  "attrs": [
+   "Доставка",
+   "Розница"
+  ],
+  "photos": [],
+  "hero": null,
+  "theme": "noir",
+  "accent": null
+ }
+]

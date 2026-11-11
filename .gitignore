@@ -1,0 +1,5 @@
+node_modules/
+data/.secret
+data/shop.db
+data/*.db-*
+passwords.md
