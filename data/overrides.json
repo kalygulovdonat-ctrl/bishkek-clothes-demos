@@ -1,9 +1,105 @@
 {
-  "70000001048854769": {
-    "_source": "Фото — раздел «Снаружи» / «Внутри» карточки 2ГИС (снимки посетителей, по разрешению пользователя)",
-    "hero": "/assets/the-bull/hero.jpg",
-    "photos": ["/assets/the-bull/1.jpg", "/assets/the-bull/2.jpg", "/assets/the-bull/3.jpg", "/assets/the-bull/4.jpg"],
-    "theme": "noir",
-    "accent": "#3ddc97"
-  }
+ "70000001048854769": {
+  "_source": "Фото — раздел «Снаружи» / «Внутри» карточки 2ГИС (снимки посетителей, по разрешению пользователя)",
+  "hero": "/assets/the-bull/hero.jpg",
+  "photos": [
+   "/assets/the-bull/1.jpg",
+   "/assets/the-bull/2.jpg",
+   "/assets/the-bull/3.jpg",
+   "/assets/the-bull/4.jpg"
+  ],
+  "theme": "noir",
+  "accent": "#3ddc97"
+ },
+ "70000001053418028": {
+  "hero": "/assets/modo/hero.jpg"
+ },
+ "70000001074773693": {
+  "hero": "/assets/ques-lavka/hero.jpg"
+ },
+ "70000001020072457": {
+  "hero": "/assets/fabishop/hero.jpg"
+ },
+ "70000001083925519": {
+  "hero": "/assets/kadam/hero.jpg"
+ },
+ "70000001084284381": {
+  "hero": "/assets/krossbox/hero.jpg"
+ },
+ "70000001099952045": {
+  "hero": "/assets/arzan-baza/hero.jpg"
+ },
+ "70000001083863008": {
+  "hero": "/assets/azraud-store/hero.jpg"
+ },
+ "70000001090795784": {
+  "hero": "/assets/oversize/hero.jpg"
+ },
+ "70000001101914548": {
+  "hero": "/assets/rodnyy/hero.jpg"
+ },
+ "70000001028422259": {
+  "hero": "/assets/emka/hero.jpg"
+ },
+ "70000001087770941": {
+  "hero": "/assets/breaking-store/hero.jpg"
+ },
+ "70000001118086997": {
+  "hero": "/assets/mano/hero.jpg"
+ },
+ "70000001075164120": {
+  "hero": "/assets/sowe-bloc/hero.jpg"
+ },
+ "70000001114529157": {
+  "hero": "/assets/uletnye-ceny/hero.jpg"
+ },
+ "70000001103202623": {
+  "hero": "/assets/nuri/hero.jpg"
+ },
+ "70000001037111081": {
+  "hero": "/assets/gantelka-sportswear/hero.jpg"
+ },
+ "70000001102710975": {
+  "hero": "/assets/nt-showroom/hero.jpg"
+ },
+ "70000001075183943": {
+  "hero": "/assets/bir-qyzyq-jer/hero.jpg"
+ },
+ "70000001093354091": {
+  "hero": "/assets/mono-dress/hero.jpg"
+ },
+ "70000001027183459": {
+  "hero": "/assets/liliya/hero.jpg"
+ },
+ "70000001113629416": {
+  "hero": "/assets/baysarkech/hero.jpg"
+ },
+ "70000001110620592": {
+  "hero": null
+ },
+ "70000001103456028": {
+  "hero": "/assets/papa-tozhe-znaet/hero.jpg"
+ },
+ "70000001032783612": {
+  "hero": "/assets/gnomik/hero.jpg"
+ },
+ "70000001094134512": {
+  "hero": "/assets/bless/hero.jpg"
+ },
+ "70000001101329906": {
+  "hero": "/assets/unreallstore/hero.jpg"
+ },
+ "70000001066886331": {
+  "hero": "/assets/mont/hero.jpg"
+ },
+ "70000001083801426": {
+  "hero": "/assets/weror-kg/hero.jpg"
+ },
+ "70000001088772185": {
+  "hero": "/assets/mykid/hero.jpg"
+ },
+ "70000001088460465": {
+  "hero": null,
+  "name": "Afilin Store"
+ }
 }

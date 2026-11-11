@@ -85,7 +85,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/modo/hero.jpg",
   "theme": "rose",
   "accent": null
  },
@@ -127,7 +127,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/ques-lavka/hero.jpg",
   "theme": "ocean",
   "accent": null
  },
@@ -169,7 +169,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/fabishop/hero.jpg",
   "theme": "noir",
   "accent": null
  },
@@ -212,7 +212,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/kadam/hero.jpg",
   "theme": "rose",
   "accent": null
  },
@@ -252,7 +252,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/krossbox/hero.jpg",
   "theme": "ocean",
   "accent": null
  },
@@ -292,7 +292,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/arzan-baza/hero.jpg",
   "theme": "noir",
   "accent": null
  },
@@ -338,7 +338,7 @@
    "Автоматическая дверь"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/azraud-store/hero.jpg",
   "theme": "rose",
   "accent": null
  },
@@ -381,7 +381,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/oversize/hero.jpg",
   "theme": "ocean",
   "accent": null
  },
@@ -420,7 +420,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/rodnyy/hero.jpg",
   "theme": "noir",
   "accent": null
  },
@@ -462,7 +462,7 @@
    "Опт"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/emka/hero.jpg",
   "theme": "rose",
   "accent": null
  },
@@ -503,7 +503,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/breaking-store/hero.jpg",
   "theme": "ocean",
   "accent": null
  },
@@ -542,7 +542,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/mano/hero.jpg",
   "theme": "noir",
   "accent": null
  },
@@ -583,7 +583,7 @@
    "Пандус"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/sowe-bloc/hero.jpg",
   "theme": "rose",
   "accent": null
  },
@@ -624,7 +624,7 @@
    "Опт"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/uletnye-ceny/hero.jpg",
   "theme": "ocean",
   "accent": null
  },
@@ -664,7 +664,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/nuri/hero.jpg",
   "theme": "noir",
   "accent": null
  },
@@ -704,7 +704,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/gantelka-sportswear/hero.jpg",
   "theme": "rose",
   "accent": null
  },
@@ -745,7 +745,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/nt-showroom/hero.jpg",
   "theme": "ocean",
   "accent": null
  },
@@ -788,7 +788,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/bir-qyzyq-jer/hero.jpg",
   "theme": "noir",
   "accent": null
  },
@@ -827,7 +827,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/mono-dress/hero.jpg",
   "theme": "rose",
   "accent": null
  },
@@ -868,7 +868,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/liliya/hero.jpg",
   "theme": "ocean",
   "accent": null
  },
@@ -911,7 +911,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/baysarkech/hero.jpg",
   "theme": "noir",
   "accent": null
  },
@@ -993,7 +993,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/papa-tozhe-znaet/hero.jpg",
   "theme": "ocean",
   "accent": null
  },
@@ -1033,7 +1033,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/gnomik/hero.jpg",
   "theme": "noir",
   "accent": null
  },
@@ -1075,7 +1075,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/bless/hero.jpg",
   "theme": "rose",
   "accent": null
  },
@@ -1114,7 +1114,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/unreallstore/hero.jpg",
   "theme": "ocean",
   "accent": null
  },
@@ -1153,7 +1153,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/mont/hero.jpg",
   "theme": "noir",
   "accent": null
  },
@@ -1192,7 +1192,7 @@
    "Розница"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/weror-kg/hero.jpg",
   "theme": "rose",
   "accent": null
  },
@@ -1232,14 +1232,14 @@
    "Пандус"
   ],
   "photos": [],
-  "hero": null,
+  "hero": "/assets/mykid/hero.jpg",
   "theme": "ocean",
   "accent": null
  },
  {
   "slug": "afilin-store",
   "id": "70000001088460465",
-  "name": "Магазин одежды",
+  "name": "Afilin Store",
   "niche": "мужская одежда",
   "source_url": "https://2gis.kg/bishkek/firm/70000001088460465",
   "phone": "+996 500 23-47-61",

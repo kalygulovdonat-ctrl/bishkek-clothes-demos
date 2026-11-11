@@ -2,5 +2,125 @@
  "the-bull": {
   "salt": "a8babcf8b9d03e2ce637dbaa30bb20ad",
   "hash": "166fe683ac626e2afeb5b62764429535935bc2e37f6b0d5f84c881c0c10f2dea"
+ },
+ "modo": {
+  "salt": "c5865cecef0bbc294aabb2644cd68cd6",
+  "hash": "cfe4ea99c8646fc90a1d89ad99ea48487095802138215bbaa4c047ff2f191099"
+ },
+ "ques-lavka": {
+  "salt": "c747c6a12b4838645ca880db277b0289",
+  "hash": "e7e17d3ac149d39b19f39d369552a24ec500860822977802265fe95a7f67487f"
+ },
+ "fabishop": {
+  "salt": "c96a02bc54e48a2d856962e9d6889b5a",
+  "hash": "3934677165c43164c4d610a9ea0b6eff84f33b25c52a1d67863189521484b96c"
+ },
+ "kadam": {
+  "salt": "f5cea9a54ad5176fffe47de6fcc00bcf",
+  "hash": "b742979c3a4fa0cae837f22bb3d72044b1ef4cc73185fb77977780f6adeca662"
+ },
+ "krossbox": {
+  "salt": "5ac02292a9b453aeabaf4e66d6c636a6",
+  "hash": "bd13e453c05c9d7ed034028786308962d6d4ce1470d2411c62f88b38357419fc"
+ },
+ "arzan-baza": {
+  "salt": "4fdfc826fdee9947cadec055af7f952e",
+  "hash": "44c66884f15e02014ca0544c829fd43485f293e9b15bacdb50078b8b92e9920f"
+ },
+ "azraud-store": {
+  "salt": "a565b4da6192daf44510c5964768b3fa",
+  "hash": "a6b941a60dee1f2e656bbf42585bc8fdc3d80076da37f3906bf7e3192cdd32f0"
+ },
+ "oversize": {
+  "salt": "710ffbf20f46f9e36f468369425db334",
+  "hash": "f18b48518d7b585ad3df4c74801962e2db81d25dedb0392850566b257026752d"
+ },
+ "rodnyy": {
+  "salt": "48f70196233e607056a56ef6b0970c70",
+  "hash": "3c815f63887c2b1a6a02262e3051f3d3c6ebcb9b1dfe0ad9d1277e828fd1f653"
+ },
+ "emka": {
+  "salt": "f994a19c5551e59f94963923aa5e4b46",
+  "hash": "9502dfdcdedb4a1ef77a67ddf63b71eee34a10d6bf2a2ea07e8cafdffe8a60ab"
+ },
+ "breaking-store": {
+  "salt": "024864aef50f98fce839e7367dda4d37",
+  "hash": "9d02fafeca3ab05490c4be2d3634ab1920d4791245c36afa96df3a113c1d5262"
+ },
+ "mano": {
+  "salt": "01c5e3e2f2cb251b0ce621898ea62a03",
+  "hash": "9e8b29307572e3e318ec07e783e8498d667a68d431a8572b345ad7779e9b0a38"
+ },
+ "sowe-bloc": {
+  "salt": "9703b4766711b688faaa484dde711469",
+  "hash": "89bfdb5064221afc6119e9069e73401613d3645967cd7c49a9596450129b3d57"
+ },
+ "uletnye-ceny": {
+  "salt": "a89b22a5f598294c22d2981f65564b9d",
+  "hash": "9587ea021b2ccc6653f1104a1ff9f55d312a360848f79f0cef37e6b113e447bb"
+ },
+ "nuri": {
+  "salt": "d439451f593ec1be9cf06b8a8723a346",
+  "hash": "c6ced25b6a97b47cd907ed597adecfc8bca7aea8ba0d922030c08b86d2a991bb"
+ },
+ "gantelka-sportswear": {
+  "salt": "a17888cbd1435f212d0c9d8874aad5de",
+  "hash": "3ea754b6399ec23e6278e98894ef8cfb1962fca06fa2eed2ece0ca5c1be1ef6f"
+ },
+ "nt-showroom": {
+  "salt": "21fbea6a9992eeef09f47c90c6242e68",
+  "hash": "56984489f23d3714623be023cddd86c231cba66422f1284fe6b4c52177d41a74"
+ },
+ "bir-qyzyq-jer": {
+  "salt": "b4513fb5e2a61d471b460f70ee864754",
+  "hash": "74acb38dc0af4b6d2226729c8a67b5c35d51e45f9bea48bba67b61ded36a17f8"
+ },
+ "mono-dress": {
+  "salt": "0bb4182829edfbf025068c244d5c4540",
+  "hash": "d182b0fb1ac8173d2fe093c681385fa894a863d72bb809da4d007c5bf91dec63"
+ },
+ "liliya": {
+  "salt": "f8e29426a9405d7572167c7c7ae1c736",
+  "hash": "4123a8d9dad4045ac91d77d8c0e93fb113c62d75640df0762e1ac28258eccabe"
+ },
+ "baysarkech": {
+  "salt": "262621c57c68571472ee5e6e019e4745",
+  "hash": "fb418b72c18d530ea001ebbc87788f77742acf3cfdbe137ce07f48de801c6d35"
+ },
+ "sportland": {
+  "salt": "5b69ec15b5e1590621266c101f997aad",
+  "hash": "668b8f370c6164ece58497b0d8e9fab5126a4a5aaae90d7a3d4d488faed0e03a"
+ },
+ "papa-tozhe-znaet": {
+  "salt": "3b8d207b917d9e8c5572d650f0b0ef77",
+  "hash": "71872d3e77ebd604e77629a134ce06b0d9959c7826ba3fba1ae59b63a7deb3df"
+ },
+ "gnomik": {
+  "salt": "988fef4b1bc0ee7f740be3b4d4e17005",
+  "hash": "63298f53bf880a6a3283c0cdf73f23ca5269fbbeb8ae4558fd2041543a60cd72"
+ },
+ "bless": {
+  "salt": "53dae11af8ebacfe3912e99093e334d5",
+  "hash": "51bdb4b17590146bddd147baecd36a3ee6ee77c23e179d75b4b5c9d4ff1546da"
+ },
+ "unreallstore": {
+  "salt": "76a62a776f6721155d75462aaf318f25",
+  "hash": "94d32bf1f2c0f5b46c4486f7cbbea3401a309f9eb1b61277af2450178963205f"
+ },
+ "mont": {
+  "salt": "b674735c1a3ca346d7c75783f0790b7a",
+  "hash": "f337aa6c7a7273b0f69d47a191d645238c48320f5a90355bf6000cb3d3ce2061"
+ },
+ "weror-kg": {
+  "salt": "c839889ef570e9181324689aebe86fce",
+  "hash": "0bd20bb78f0f9da5441969a44e968e80c8e1ed7339181a61d2d5908c575ab552"
+ },
+ "mykid": {
+  "salt": "7d9b9a4bfd4a93aaaaaba23ed589724b",
+  "hash": "b382bc31d2f57fc56b87b42e19e81821d61f1f30e135b55f176fd2a7a7843241"
+ },
+ "afilin-store": {
+  "salt": "18e4f4eed9718144d28bd2b1724e14e1",
+  "hash": "24d8c86370d6808e6aeaba37258b75c18c1050596d7f25f1b1edfb568a3548df"
  }
 }
