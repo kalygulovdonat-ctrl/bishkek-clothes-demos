@@ -1,11 +1,10 @@
 // Проверка бэкенда: node test-api.js [адрес]   (по умолчанию http://localhost:4400)
 // Создаёт и удаляет тестовый товар, проверяет защиту. Пароль берёт из того же секрета, что и сервер.
 const fs = require('fs');
-const { execFileSync } = require('child_process');
 const B = process.argv[2] || 'http://localhost:4400';
 const SLUG = 'the-bull';
-const pw = execFileSync(process.execPath, ['server.js', '--passwords'], { cwd: __dirname, env: process.env }).toString()
-  .split('\n').find(l => l.startsWith(SLUG + ' ')).trim().split(/\s+/)[1];
+// Пароль — из локального passwords.md (строка с /the-bull/admin)
+const pw = fs.readFileSync(`${__dirname}/passwords.md`, 'utf8').split('\n').find(l => l.includes(`/${SLUG}/admin`)).match(/`([^`]+)`/)[1];
 
 let cookie = '';
 async function call(method, path, body, withCookie = true) {

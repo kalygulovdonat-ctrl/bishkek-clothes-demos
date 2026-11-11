@@ -23,7 +23,10 @@ function loadSecret() {
 }
 const SECRET = loadSecret();
 const hmac = v => crypto.createHmac('sha256', SECRET).update(v).digest('base64url');
-const passwordFor = slug => hmac('pw:' + slug).replace(/[-_]/g, '').slice(0, 12);
+// Пароли админок: в data/admins.json лежат только scrypt-отпечатки. Сами пароли — у владельца проекта (passwords.md).
+const ADMINS_FILE = path.join(ROOT, 'data', 'admins.json');
+const ADMINS = fs.existsSync(ADMINS_FILE) ? JSON.parse(fs.readFileSync(ADMINS_FILE, 'utf8')) : {};
+const scrypt = (pw, salt) => crypto.scryptSync(pw, salt, 32).toString('hex');
 
 // Показываем только магазины, для которых уже написаны тексты (content/<slug>.json)
 const STORES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'stores.json'), 'utf8'))
@@ -31,8 +34,21 @@ const STORES = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'stores.json')
 const findStore = slug => STORES.find(s => s.slug === slug);
 const content = slug => { const f = path.join(ROOT, 'content', slug + '.json'); return fs.existsSync(f) ? JSON.parse(fs.readFileSync(f, 'utf8')) : {}; };
 
-if (process.argv[2] === '--passwords') {
-  for (const s of STORES) console.log(`${s.slug.padEnd(24)} ${passwordFor(s.slug)}`);
+// node server.js --new-passwords  — выдать пароли магазинам, у которых их ещё нет:
+// отпечатки → data/admins.json (в репозиторий), сами пароли → passwords.md (только локально)
+if (process.argv[2] === '--new-passwords') {
+  const pwFile = path.join(ROOT, 'passwords.md');
+  let md = fs.existsSync(pwFile) ? fs.readFileSync(pwFile, 'utf8') : '# Пароли админок (только у вас, не в репозитории)\n\n| Магазин | Админка | Пароль |\n|---|---|---|\n';
+  for (const s of STORES) {
+    if (ADMINS[s.slug]) continue;
+    const pw = crypto.randomBytes(9).toString('base64url').replace(/[-_]/g, 'x');
+    const salt = crypto.randomBytes(16).toString('hex');
+    ADMINS[s.slug] = { salt, hash: scrypt(pw, salt) };
+    md += `| ${s.name} | /${s.slug}/admin | \`${pw}\` |\n`;
+    console.log('Новый пароль:', s.slug);
+  }
+  fs.writeFileSync(ADMINS_FILE, JSON.stringify(ADMINS, null, 1));
+  fs.writeFileSync(pwFile, md);
   process.exit(0);
 }
 
@@ -40,9 +56,10 @@ const db = openDb(ROOT);
 
 // ---------- Вход ----------
 function checkPassword(slug, pw) {
-  if (typeof pw !== 'string') return false;
-  const a = Buffer.from(hmac('cmp:' + pw)), b = Buffer.from(hmac('cmp:' + passwordFor(slug)));
-  return crypto.timingSafeEqual(a, b);
+  const rec = ADMINS[slug];
+  if (!rec || typeof pw !== 'string' || pw.length > 200) return false;
+  const a = Buffer.from(scrypt(pw, rec.salt), 'hex'), b = Buffer.from(rec.hash, 'hex');
+  return a.length === b.length && crypto.timingSafeEqual(a, b);
 }
 function makeToken(slug) { const exp = Date.now() + 7 * 864e5; const v = `${slug}.${exp}`; return `${v}.${hmac('session:' + v)}`; }
 function isAuthed(req, slug) {

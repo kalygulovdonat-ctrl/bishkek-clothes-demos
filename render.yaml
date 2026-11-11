@@ -1,5 +1,5 @@
 # Render Blueprint: веб-сервис + бесплатная база PostgreSQL.
-# В Render: New → Blueprint → выбрать этот репозиторий. ADMIN_SECRET спросит при создании.
+# В Render: New → Blueprint → выбрать этот репозиторий. ADMIN_SECRET Render сгенерирует сам (подпись входа).
 services:
   - type: web
     name: bishkek-clothes-demos
@@ -17,7 +17,7 @@ services:
           name: clothes-db
           property: connectionString
       - key: ADMIN_SECRET
-        sync: false
+        generateValue: true
 
 databases:
   - name: clothes-db
