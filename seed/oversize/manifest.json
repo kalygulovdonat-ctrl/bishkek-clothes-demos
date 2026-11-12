@@ -1,0 +1,15 @@
+[
+  { "file": "o01.jpg", "title": "Худи винтажное", "price": 3500, "category": "Худи", "sizes": "M, L, XL, 2XL", "description": "Винтажные худи. Доставка по всему Кыргызстану." },
+  { "file": "o02.jpg", "title": "Худи красное", "price": 3200, "category": "Худи", "description": "Доставка по всему Кыргызстану." },
+  { "file": "o03.jpg", "title": "Зип-худи серое", "price": 3000, "category": "Зип-худи", "description": "Худи на молнии. Доставка по всему Кыргызстану." },
+  { "file": "o04.jpg", "title": "Худи бордовое", "price": 2500, "category": "Худи", "sizes": "M, L, XL, 2XL, 3XL", "description": "Доставка по всему Кыргызстану." },
+  { "file": "o05.jpg", "title": "Зип-худи зелёное", "price": 3000, "category": "Зип-худи", "description": "Худи на молнии. Доставка по всему Кыргызстану." },
+  { "file": "o10.jpg", "title": "Худи oversize — чёрное", "price": 2600, "category": "Худи", "description": "Есть в чёрном, коричневом, сером и тёмно-синем." },
+  { "file": "o11.jpg", "title": "Худи oversize — коричневое", "price": 2600, "category": "Худи", "description": "Есть в чёрном, коричневом, сером и тёмно-синем." },
+  { "file": "o12.jpg", "title": "Худи oversize — серое", "price": 2600, "category": "Худи", "description": "Есть в чёрном, коричневом, сером и тёмно-синем." },
+  { "file": "o13.jpg", "title": "Худи oversize — тёмно-синее", "price": 2600, "category": "Худи", "description": "Есть в чёрном, коричневом, сером и тёмно-синем." },
+  { "file": "o06.jpg", "title": "Штаны серые", "price": 2900, "category": "Штаны", "sizes": "M, L, XL, 2XL, 3XL", "description": "Доставка по всему Кыргызстану." },
+  { "file": "o07.jpg", "title": "Штаны чёрные", "price": 2700, "category": "Штаны", "description": "Доставка по всему Кыргызстану." },
+  { "file": "o08.jpg", "title": "Штаны камуфляж", "price": 2800, "category": "Штаны", "description": "Доставка по всему Кыргызстану." },
+  { "file": "o09.jpg", "title": "Штаны светло-серые", "price": 3200, "category": "Штаны", "description": "Доставка по всему Кыргызстану." }
+]

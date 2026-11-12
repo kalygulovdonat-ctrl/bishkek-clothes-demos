@@ -9,6 +9,7 @@ const rgba = (hex, a) => { const n = parseInt(hex.slice(1), 16); return `rgba(${
 const THEMES = {
   noir:  { bg: '#0c0c0d', surface: '#151517', ink: '#f4f1ec', muted: '#a3a09a', line: '#26262a', accent: '#e9d8b4' },
   rose:  { bg: '#120c10', surface: '#1c1419', ink: '#f7eef2', muted: '#b29fa8', line: '#2e2229', accent: '#ff7aa8' },
+  navy:  { bg: '#030d28', surface: '#0a1738', ink: '#f3f5fb', muted: '#9ba7c6', line: '#1a2a52', accent: '#ff4b2b' },
   ocean: { bg: '#0a0f17', surface: '#111a26', ink: '#eef4fb', muted: '#98a6b8', line: '#1d2a3b', accent: '#5cc8ff' }
 };
 const ICON_WA = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.5.4.1.1.1.6-.1 1.2z"/></svg>';
@@ -58,7 +59,7 @@ module.exports = function renderStore(s, c, items) {
 <title>${esc(s.name)} — ${esc(s.niche || 'магазин одежды')}, Бишкек</title>
 <meta name="description" content="${esc(c.tagline || '')}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;800${s.logoFont === 'script' ? '&family=Kaushan+Script' : ''}&display=swap" rel="stylesheet">
 <style>
 :root{color-scheme:dark;--bg:${T.bg};--surface:${T.surface};--ink:${T.ink};--muted:${T.muted};--line:${T.line};--accent:${T.accent};--on-accent:${T.onAccent};--wa:#1fa855;--r:18px;--head:"Unbounded",system-ui,sans-serif}
 *{box-sizing:border-box;margin:0}
@@ -71,6 +72,7 @@ a{color:inherit}svg{width:20px;height:20px;flex-shrink:0}
 nav{position:sticky;top:0;z-index:8;background:${rgba(T.bg, .82)};-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 nav .wrap{display:flex;align-items:center;gap:16px;height:60px}
 .logo{font:800 18px/1 var(--head);letter-spacing:.02em;text-decoration:none;margin-right:auto;text-transform:uppercase}
+${s.logoFont === 'script' ? '.logo{font:400 30px/1 "Kaushan Script",cursive;text-transform:none;letter-spacing:0}.hero h1.script{font-family:"Kaushan Script",cursive;text-transform:none;letter-spacing:0;font-weight:400}' : ''}
 nav .links{display:none;gap:22px;font-weight:600;font-size:14px}
 nav .links a{text-decoration:none;color:var(--muted)}nav .links a:hover{color:var(--ink)}
 @media(min-width:760px){nav .links{display:flex}}
@@ -186,7 +188,7 @@ footer{padding:0 0 30px;color:var(--muted);font-size:12.5px;text-align:center}
   ${s.hero ? `<div class="hero-bg" style="background-image:url('${esc(s.hero)}')" role="img" aria-label="${esc(s.name)}"></div>` : ''}
   <div class="wrap hero-in">
     <span class="eyebrow">${esc(s.niche || 'магазин одежды')} · Бишкек</span>
-    <h1>${esc(s.name)}</h1>
+    <h1${s.logoFont === 'script' ? ' class="script"' : ''}>${esc(s.name)}</h1>
     ${c.tagline ? `<p class="tagline">${esc(c.tagline)}</p>` : ''}
     <div class="btns"><a class="btn btn-main" href="#catalog">Смотреть каталог</a>${wa ? `<a class="btn btn-ghost" href="${wa}" target="_blank" rel="noopener">${ICON_WA}<span>WhatsApp</span></a>` : ''}</div>
     <div class="chips">

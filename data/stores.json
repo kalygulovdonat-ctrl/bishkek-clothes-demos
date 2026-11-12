@@ -382,8 +382,9 @@
   ],
   "photos": [],
   "hero": "/assets/oversize/hero.jpg",
-  "theme": "ocean",
-  "accent": null
+  "theme": "navy",
+  "accent": null,
+  "logoFont": "script"
  },
  {
   "slug": "rodnyy",

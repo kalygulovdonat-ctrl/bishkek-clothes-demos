@@ -34,7 +34,10 @@
   "hero": "/assets/azraud-store/hero.jpg"
  },
  "70000001090795784": {
-  "hero": "/assets/oversize/hero.jpg"
+  "hero": "/assets/oversize/hero.jpg",
+  "theme": "navy",
+  "logoFont": "script",
+  "instagram": "https://instagram.com/oversize.kg"
  },
  "70000001101914548": {
   "hero": "/assets/rodnyy/hero.jpg"
