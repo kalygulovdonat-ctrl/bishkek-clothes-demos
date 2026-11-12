@@ -3,3 +3,6 @@ data/.secret
 data/shop.db
 data/*.db-*
 passwords.md
+links.md
+messages.md
+seed/*/ig.json

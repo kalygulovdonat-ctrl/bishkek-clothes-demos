@@ -75,6 +75,12 @@ const SECURE = process.env.RENDER ? '; Secure' : '';
 // Не больше 10 неверных паролей за 10 минут с одного адреса
 const fails = new Map();
 const clientIp = req => (process.env.RENDER && (req.headers['x-forwarded-for'] || '').split(',')[0].trim()) || req.socket.remoteAddress || '';
+const EVENT_TYPES = new Set(['view', 'product', 'order', 'wa', 'call']);
+// Дата по Бишкеку (UTC+6), со сдвигом в днях
+const bishkekDay = (shift = 0) => new Date(Date.now() + 6 * 3600e3 + shift * 864e5).toISOString().slice(0, 10);
+// Не больше 120 событий в минуту с одного адреса
+const evHits = new Map();
+const eventFlood = ip => { const now = Date.now(), l = (evHits.get(ip) || []).filter(t => now - t < 6e4); l.push(now); evHits.set(ip, l); if (evHits.size > 5000) evHits.clear(); return l.length > 120; };
 const recentFails = ip => { const now = Date.now(), l = (fails.get(ip) || []).filter(t => now - t < 6e5); fails.set(ip, l); return l; };
 
 // ---------- Помощники ----------
@@ -155,6 +161,22 @@ const server = http.createServer(async (req, res) => {
 
       if (parts[2] === 'products' && req.method === 'GET' && !parts[3]) return json(res, 200, await db.list(slug));
 
+      // Статистика с витрины: просмотр страницы, товара, клик «Заказать», WhatsApp, звонок.
+      // Принимаем text/plain (sendBeacon), не храним IP, ботов отбрасываем.
+      if (parts[2] === 'event' && req.method === 'POST') {
+        const ua = req.headers['user-agent'] || '';
+        if (/bot|crawl|spider|preview|facebookexternalhit|whatsapp|telegram/i.test(ua) || eventFlood(clientIp(req))) return send(res, 204, '');
+        const b = await readBody(req, 2048);
+        if (!EVENT_TYPES.has(b.type)) return send(res, 204, '');
+        let ref = null;
+        try { const h = new URL(String(b.ref || '')).hostname.replace(/^www\./, ''); if (h && h !== (req.headers.host || '').split(':')[0]) ref = h.slice(0, 60); } catch {}
+        await db.logEvent({
+          slug, type: b.type, product_id: Number.isInteger(b.product_id) ? b.product_id : null, day: bishkekDay(),
+          vid: /^[a-z0-9]{8,32}$/.test(b.vid || '') ? b.vid : null, ref, device: /Mobi|Android|iPhone|iPad/i.test(ua) ? 'mobile' : 'desktop'
+        });
+        return send(res, 204, '');
+      }
+
       if (parts[2] === 'login' && req.method === 'POST') {
         const ip = clientIp(req), l = recentFails(ip);
         if (l.length >= 10) return json(res, 429, { error: 'Слишком много попыток. Подождите 10 минут.' });
@@ -167,6 +189,20 @@ const server = http.createServer(async (req, res) => {
       // Ниже — только для владельца этого магазина
       if (!isAuthed(req, slug)) return json(res, 401, { error: 'Нужно войти' });
       if ((req.method === 'POST' || req.method === 'PUT') && !(req.headers['content-type'] || '').startsWith('application/json')) return json(res, 415, { error: 'Только JSON' });
+
+      if (parts[2] === 'stats' && req.method === 'GET') {
+        const days = [7, 30, 90].includes(Number(url.searchParams.get('days'))) ? Number(url.searchParams.get('days')) : 30;
+        const from = bishkekDay(-(days - 1));
+        const [st, items] = await Promise.all([db.stats(slug, from), db.list(slug)]);
+        const byId = new Map(items.map(i => [i.id, i]));
+        // Заполняем пустые дни нулями, чтобы график был ровным
+        const map = new Map(st.daily.map(d => [d.day, d]));
+        st.daily = Array.from({ length: days }, (_, k) => { const d = bishkekDay(k - days + 1); return map.get(d) || { day: d, views: 0, visitors: 0, leads: 0 }; });
+        st.products = st.products.filter(p => byId.has(p.id)).map(p => ({ ...p, title: byId.get(p.id).title, image: byId.get(p.id).image }))
+          .sort((a, b) => b.orders - a.orders || b.views - a.views).slice(0, 10);
+        st.catalog = { total: items.length, hidden: items.filter(i => !i.in_stock).length, no_price: items.filter(i => !i.price).length, no_photo: items.filter(i => !i.image).length };
+        return json(res, 200, { days, ...st });
+      }
 
       if (parts[2] === 'products' && req.method === 'POST' && !parts[3]) {
         const b = await readBody(req); const f = productFields(b);

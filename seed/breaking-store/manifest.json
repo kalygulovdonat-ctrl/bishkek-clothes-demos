@@ -1,0 +1,104 @@
+[
+  {
+    "file": "12.jpg",
+    "title": "Пуховик Mertra",
+    "price": 5500,
+    "category": "Куртки",
+    "description": "Чёрный цвет. В наличии. Доставка по Кыргызстану, Казахстану и России."
+  },
+  {
+    "file": "05.jpg",
+    "title": "Куртки-пуховики",
+    "price": 4500,
+    "category": "Куртки",
+    "description": "Куртки от 4500 сом, все вещи в наличии."
+  },
+  {
+    "file": "03.jpg",
+    "title": "Худи Supreme",
+    "price": 3200,
+    "category": "Худи",
+    "description": "В наличии. Доставка по всему Кыргызстану и в Россию, Казахстан."
+  },
+  {
+    "file": "06.jpg",
+    "title": "Джинсы широкие",
+    "price": 1600,
+    "old_price": 2600,
+    "category": "Джинсы",
+    "description": "Скидка: 1600 сом вместо 2600. Все вещи в наличии."
+  },
+  {
+    "file": "19.jpg",
+    "title": "Бини Burberry",
+    "price": 900,
+    "category": "Шапки",
+    "description": "Из подборки бини на холода."
+  },
+  {
+    "file": "17.jpg",
+    "title": "Бини Arc'teryx",
+    "price": 800,
+    "category": "Шапки",
+    "description": "Из подборки бини на холода."
+  },
+  {
+    "file": "18.jpg",
+    "title": "Бини Corteiz",
+    "price": 800,
+    "category": "Шапки",
+    "description": "Из подборки бини на холода."
+  },
+  {
+    "file": "15.jpg",
+    "title": "Бини Mea Culpa",
+    "price": 750,
+    "category": "Шапки",
+    "description": "Из подборки бини на холода."
+  },
+  {
+    "file": "16.jpg",
+    "title": "Бини с британским флагом",
+    "price": 750,
+    "category": "Шапки",
+    "description": "Из подборки бини на холода."
+  },
+  {
+    "file": "14.jpg",
+    "title": "Бини на зиму — вся подборка",
+    "category": "Шапки",
+    "description": "Arc — 800, Mea Culpa — 750, британский флаг — 750, Corteiz — 800, Burberry — 900 сом."
+  },
+  {
+    "file": "09.jpg",
+    "title": "Пижама Spider-Man / Hello Kitty",
+    "price": 750,
+    "category": "Пижамы",
+    "sizes": "все размеры",
+    "description": "Унисекс, все размеры в наличии."
+  },
+  {
+    "file": "11.jpg",
+    "title": "Пижамные штаны Spider-Man",
+    "price": 750,
+    "category": "Пижамы",
+    "sizes": "все размеры",
+    "description": "Унисекс, все размеры в наличии."
+  },
+  {
+    "file": "10.jpg",
+    "title": "Пижама Spider-Man",
+    "price": 750,
+    "category": "Пижамы",
+    "sizes": "все размеры",
+    "description": "Унисекс, все размеры в наличии."
+  },
+  {
+    "file": "08.jpg",
+    "title": "Парные пижамы",
+    "price": 750,
+    "category": "Пижамы",
+    "sizes": "все размеры",
+    "description": "Цена за одну пижаму, унисекс."
+  }
+]

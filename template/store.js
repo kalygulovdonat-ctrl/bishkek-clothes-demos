@@ -37,15 +37,15 @@ module.exports = function renderStore(s, c, items) {
   const delivery = (s.attrs || []).includes('Доставка');
   const orderText = it => `Здравствуйте! Хочу заказать: ${it.title}${it.price ? ` — ${num(it.price)} сом` : ''}${it.sizes ? ` (размеры: ${it.sizes})` : ''}. Увидел на вашем сайте.`;
 
-  const card = it => `<article class="p" data-cat="${esc(it.category || '')}" id="p${it.id}">
-  <div class="ph">${it.image ? `<img src="${esc(it.image)}" alt="${esc(it.title)}" loading="lazy">` : '<div class="noimg"></div>'}${it.old_price && it.price && it.old_price > it.price ? `<span class="sale">−${Math.round((1 - it.price / it.old_price) * 100)}%</span>` : ''}</div>
+  const card = it => `<article class="p" data-cat="${esc(it.category || '')}" data-id="${it.id}" id="p${it.id}">
+  <div class="ph" data-open="${it.id}" role="button" tabindex="0" aria-label="Подробнее: ${esc(it.title)}">${it.image ? `<img src="${esc(it.image)}" alt="${esc(it.title)}" loading="lazy">` : '<div class="noimg"></div>'}${it.old_price && it.price && it.old_price > it.price ? `<span class="sale">−${Math.round((1 - it.price / it.old_price) * 100)}%</span>` : ''}</div>
   <div class="pi">
     ${it.category ? `<div class="pc">${esc(it.category)}</div>` : ''}
-    <h3>${esc(it.title)}</h3>
+    <h3 data-open="${it.id}">${esc(it.title)}</h3>
     ${it.description ? `<p class="pd">${esc(it.description)}</p>` : ''}
     ${it.sizes ? `<div class="sz">${esc(it.sizes).split(/\s*,\s*/).map(x => `<span>${x}</span>`).join('')}</div>` : ''}
     <div class="pr">${it.price ? `<b>${num(it.price)} сом</b>` : '<b class="ask">цена по запросу</b>'}${it.old_price && it.price && it.old_price > it.price ? `<s>${num(it.old_price)}</s>` : ''}</div>
-    ${wa ? `<a class="btn btn-main sm" href="${wa}?text=${encodeURIComponent(orderText(it))}" target="_blank" rel="noopener">${ICON_WA}<span>Заказать</span></a>` : s.phone ? `<a class="btn btn-main sm" href="${tel(s.phone)}">${ICON_PHONE}<span>Позвонить</span></a>` : ''}
+    ${wa ? `<a class="btn btn-main sm" data-order="${it.id}" href="${wa}?text=${encodeURIComponent(orderText(it))}" target="_blank" rel="noopener">${ICON_WA}<span>Заказать</span></a>` : s.phone ? `<a class="btn btn-main sm" href="${tel(s.phone)}">${ICON_PHONE}<span>Позвонить</span></a>` : ''}
   </div></article>`;
 
   return `<!doctype html>
@@ -162,6 +162,18 @@ footer{padding:0 0 30px;color:var(--muted);font-size:12.5px;text-align:center}
 .bar{position:fixed;left:0;right:0;bottom:0;z-index:9;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:${rgba(T.bg, .88)};-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid var(--line)}
 .bar .btn{flex:1;padding:13px 10px;font-size:15px}
 @media(min-width:900px){.bar{display:none}body{padding-bottom:0}}
+.ph,[data-open]{cursor:pointer}
+.modal{position:fixed;inset:0;z-index:20;display:none;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.72);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+.modal.open{display:flex}
+.sheet{background:var(--surface);border:1px solid var(--line);border-radius:24px 24px 0 0;width:100%;max-width:880px;max-height:92vh;overflow:auto;display:grid;animation:up .25s ease}
+@keyframes up{from{transform:translateY(40px);opacity:0}}
+@media(min-width:760px){.modal{align-items:center;padding:20px}.sheet{border-radius:24px;grid-template-columns:1.1fr 1fr}}
+.sheet .big{position:relative;background:${rgba(T.ink, .04)};min-height:120px}.sheet .big img{width:100%;height:100%;max-height:70vh;object-fit:cover;display:block}
+.sheet .info{padding:22px;display:flex;flex-direction:column;gap:10px}
+.sheet h3{font:800 24px/1.15 var(--head);text-transform:uppercase}
+.sheet .pr b{font-size:24px}.sheet .sz span{font-size:13px;padding:5px 9px}
+.sheet .x{position:absolute;right:12px;top:12px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(0,0,0,.55);color:#fff;font-size:22px;cursor:pointer}
+.sheet .info .btn{margin-top:auto}
 .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}.reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
 </style>
@@ -218,11 +230,30 @@ ${s.coords ? `<iframe class="map" loading="lazy" title="Карта" src="https:/
 ${wa ? `<div class="final reveal"><h2>${esc(c.cta || 'Подберём размер за минуту')}</h2><p>Напишите, что понравилось — подскажем по размеру и наличию${delivery ? ', доставим' : ''}.</p><a class="btn btn-main" href="${wa}" target="_blank" rel="noopener">${ICON_WA}<span>Написать в WhatsApp</span></a></div>` : ''}
 <footer>Демо-концепт сайта для «${esc(s.name)}». Не является официальным сайтом. Данные — из открытой карточки 2ГИС.</footer>
 </div>
+<div class="modal" id="modal" aria-hidden="true"><div class="sheet" role="dialog" aria-modal="true"><div class="big"><img id="mImg" alt=""><button class="x" id="mClose" aria-label="Закрыть">×</button></div><div class="info"><div class="pc" id="mCat"></div><h3 id="mTitle"></h3><p class="pd" id="mDesc" style="-webkit-line-clamp:unset;display:block"></p><div class="sz" id="mSz"></div><div class="pr" id="mPr"></div><a class="btn btn-main" id="mOrder" target="_blank" rel="noopener">${ICON_WA}<span>Заказать в WhatsApp</span></a></div></div></div>
+<script type="application/json" id="P">${JSON.stringify(visible.map(it => ({ id: it.id, t: it.title, c: it.category, d: it.description, s: it.sizes, p: it.price, o: it.old_price, i: it.image, u: wa ? wa + '?text=' + encodeURIComponent(orderText(it)) : null }))).replace(/</g, '\\u003c')}</script>
 <div class="bar">${wa ? `<a class="btn btn-wa" href="${wa}" target="_blank" rel="noopener">${ICON_WA}<span>WhatsApp</span></a>` : ''}${s.phone ? `<a class="btn btn-main" href="${tel(s.phone)}">${ICON_PHONE}<span>Позвонить</span></a>` : ''}</div>
 <script>
 (function(){
 var f=document.getElementById('filters');
 if(f)f.onclick=function(e){var b=e.target.closest('button');if(!b)return;[].forEach.call(f.children,function(x){x.classList.toggle('on',x===b)});var c=b.getAttribute('data-c');[].forEach.call(document.querySelectorAll('.p'),function(p){p.hidden=!!c&&p.getAttribute('data-cat')!==c})};
+var SLUG=${JSON.stringify(s.slug)};
+var vid;try{vid=localStorage.getItem('vid');if(!vid){vid=Math.random().toString(36).slice(2,14)+Date.now().toString(36);localStorage.setItem('vid',vid)}}catch(_){vid=null}
+function ev(type,pid){try{var b=JSON.stringify({type:type,product_id:pid||undefined,vid:vid,ref:document.referrer});if(navigator.sendBeacon)navigator.sendBeacon('/api/'+SLUG+'/event',new Blob([b],{type:'text/plain'}));else fetch('/api/'+SLUG+'/event',{method:'POST',body:b,keepalive:true})}catch(_){}}
+ev('view');
+var P={};try{JSON.parse(document.getElementById('P').textContent).forEach(function(x){P[x.id]=x})}catch(_){}
+var m=document.getElementById('modal'),fmt=function(n){return Number(n).toLocaleString('ru-RU')},$i=function(i){return document.getElementById(i)};
+function openP(id){var x=P[id];if(!x)return;$i('mImg').src=x.i||'';$i('mImg').style.display=x.i?'':'none';$i('mCat').textContent=x.c||'';$i('mTitle').textContent=x.t;$i('mDesc').textContent=x.d||'';
+$i('mSz').innerHTML='';(x.s||'').split(/\\s*,\\s*/).filter(Boolean).forEach(function(z){var sp=document.createElement('span');sp.textContent=z;$i('mSz').appendChild(sp)});
+$i('mPr').innerHTML=x.p?'<b>'+fmt(x.p)+' сом</b>'+(x.o&&x.o>x.p?'<s>'+fmt(x.o)+'</s>':''):'<b class="ask">цена по запросу</b>';
+var o=$i('mOrder');if(x.u){o.href=x.u;o.style.display='';o.setAttribute('data-order',id)}else o.style.display='none';
+m.classList.add('open');m.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';ev('product',id);try{history.replaceState(null,'','#p'+id)}catch(_){}}
+function closeP(){m.classList.remove('open');m.setAttribute('aria-hidden','true');document.body.style.overflow='';try{history.replaceState(null,'',location.pathname)}catch(_){}}
+document.addEventListener('click',function(e){var t=e.target.closest('[data-open]');if(t){openP(+t.getAttribute('data-open'));return}
+ var a=e.target.closest('a');if(!a)return;if(a.hasAttribute('data-order'))ev('order',+a.getAttribute('data-order'));else if(/wa\\.me/.test(a.href))ev('wa');else if(/^tel:/.test(a.href))ev('call')});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeP();if(e.key==='Enter'&&e.target.hasAttribute&&e.target.hasAttribute('data-open'))openP(+e.target.getAttribute('data-open'))});
+m.addEventListener('click',function(e){if(e.target===m)closeP()});$i('mClose').onclick=closeP;
+if(/^#p\\d+$/.test(location.hash))openP(+location.hash.slice(2));
 var rs=document.querySelectorAll('.reveal');
 if('IntersectionObserver'in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'0px 0px -8% 0px'});rs.forEach(function(r){io.observe(r)})}else rs.forEach(function(r){r.classList.add('in')});
 })();

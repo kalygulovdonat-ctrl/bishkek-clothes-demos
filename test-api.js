@@ -36,4 +36,28 @@ const ok = (name, cond, extra = '') => { console.log(`${cond ? '✓' : '✗'} ${
   ok('фото удалено вместе с товаром', (await fetch(B + add.j.image)).status === 404);
   const end = await call('GET', `/api/${SLUG}/products`);
   ok('список вернулся к исходному', end.j.length === start.j.length, `${end.j.length} шт.`);
+
+  // ---------- Статистика ----------
+  ok('статистика без входа закрыта', (await fetch(`${B}/api/${SLUG}/stats`)).status === 401);
+  // Тестовые события пишем только локально, чтобы не портить реальную статистику магазина
+  if (!/localhost|127\.0\.0\.1/.test(B)) { ok('дашборд отвечает', (await call('GET', `/api/${SLUG}/stats?days=30`)).code === 200); return; }
+  const before = (await call('GET', `/api/${SLUG}/stats?days=7`)).j;
+  const beacon = (body, ua = 'Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) Mobile') =>
+    fetch(`${B}/api/${SLUG}/event`, { method: 'POST', headers: { 'Content-Type': 'text/plain', 'User-Agent': ua }, body: JSON.stringify(body) });
+  const pid = end.j[0].id, runId = Math.random().toString(36).slice(2, 10);
+  for (const v of ['a', 'b']) await beacon({ type: 'view', vid: 'test' + runId + v, ref: 'https://l.instagram.com/' });
+  await beacon({ type: 'product', product_id: pid, vid: 'test' + runId + 'a' });
+  await beacon({ type: 'order', product_id: pid, vid: 'test' + runId + 'a' });
+  await beacon({ type: 'wa', vid: 'test' + runId + 'b' });
+  await beacon({ type: 'call', vid: 'test' + runId + 'b' });
+  await beacon({ type: 'view', vid: 'test' + runId + 'c' }, 'Googlebot/2.1');   // бот — не считается
+  await beacon({ type: 'hack', vid: 'test' + runId + 'c' });                   // неизвестный тип — не считается
+  const after = (await call('GET', `/api/${SLUG}/stats?days=7`)).j;
+  ok('просмотры +2 (бот не засчитан)', after.views - before.views === 2, `${before.views} → ${after.views}`);
+  ok('посетители +2', after.visitors - before.visitors === 2);
+  ok('просмотр товара и заказ засчитаны', after.product_views - before.product_views === 1 && after.orders - before.orders === 1);
+  ok('WhatsApp и звонок засчитаны', after.wa - before.wa === 1 && after.calls - before.calls === 1);
+  ok('товар в рейтинге', after.products.some(p => p.id === pid && p.orders >= 1));
+  ok('источник Instagram', after.refs.some(r => /instagram/.test(r.ref)));
+  ok('график на 7 дней', after.daily.length === 7 && after.daily[6].views >= 2);
 })();
